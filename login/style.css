@@ -1,0 +1,97 @@
+#login {
+
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 13% 1fr 20px 1fr 13%;
+    grid-template-areas:
+        "head head head head head  "
+        ". cont . side  . "
+        "footer footer footer footer footer";
+    grid-template-rows: 50px auto 50px;
+    height: 100%;
+}
+
+.Login {
+    grid-area: cont;
+
+}
+
+.Register {
+    grid-area: side;
+}
+
+.Login,
+.Register {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #eee;
+    display: block;
+    padding-bottom: 30px;
+}
+
+.box {
+
+    height: 40px;
+    width: 90%;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin: 15px 5px 20px 0px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.Remember {
+    display: flex;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.submit {
+    background-color: rgb(235, 59, 59);
+    border-radius: 5px;
+    width: 90%;
+    border: none;
+    color: #eee;
+    height: 45px;
+    margin-bottom: 20px;
+
+}
+
+
+form {
+    padding-left: 40px;
+}
+
+h1 {
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+
+span,
+.submit {
+    cursor: pointer;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+@media (max-width: 1050px) {
+    #login {
+
+        grid-template-columns: 10% auto 10%;
+        grid-template-areas:
+            "head head head"
+            ". cont ."
+            ". . ."
+            ". side ."
+            "footer footer footer";
+        grid-template-rows: 50px auto 20px auto 50px;
+       
+    }
+
+}
